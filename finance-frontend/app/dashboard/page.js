@@ -21,7 +21,7 @@ export default function DashboardPage() {
 
     ; (async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/transactions/', {
+        const res = await fetch('https://finplanai.onrender.com/api/transactions/', {
           headers: { Authorization: `Bearer ${token}` }
         })
 
@@ -64,7 +64,7 @@ export default function DashboardPage() {
       return
     }
     try {
-      const res = await fetch('http://localhost:8000/api/ai/advice/', {
+      const res = await fetch('https://finplanai.onrender.com/api/ai/advice/', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

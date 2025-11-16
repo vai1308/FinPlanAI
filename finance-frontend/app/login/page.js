@@ -11,7 +11,7 @@ export default function LoginPage() {
     e.preventDefault()
 
     // Send login request to Django backend
-    const res = await fetch('http://localhost:8000/api/auth/token/', {
+    const res = await fetch('https://finplanai.onrender.com/api/auth/token/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
