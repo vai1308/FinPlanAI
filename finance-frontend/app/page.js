@@ -42,7 +42,7 @@ export default function HomePage() {
           className="flex flex-col sm:flex-row gap-4"
         >
           <Link
-            href={!loggedIn ? "/register" : "/dashboard"}
+            href={!loggedIn ? "/login" : "/dashboard"}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
           >
             Get Started

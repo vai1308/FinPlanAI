@@ -17,7 +17,7 @@ export default function AddPage() {
     e.preventDefault()
 
     try {
-      const res = await apiFetch('https://finplanai.onrender.com', {
+      const res = await apiFetch('http://localhost:8000/', {
         method: 'POST',
         body: JSON.stringify(form)
       })

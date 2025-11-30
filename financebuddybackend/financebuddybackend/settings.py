@@ -97,15 +97,8 @@ WSGI_APPLICATION = 'financebuddybackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'if0_40433671_FinDB',
-        'USER': 'if0_40433671',
-        'PASSWORD': '26H20DfwXw5f',
-        'HOST': 'sql100.infinityfree.com',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
